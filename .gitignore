@@ -1,2 +1,19 @@
 node_modules
 .DS_Store
+
+// 1st rule and Strongest rule
+// when a function is called with the 'new' keyword, the object that
+// that function returns becomes 'this'
+// 2nd rule
+// checks if the function was called with the prototype methods for functions
+// 'call', 'apply' or 'bind'
+// when that function is called, the parameter passed to 'call', 'apply' or 'bind'
+// becomes what 'this' is
+// 3rd rule.
+// Check if an object is calling a the function
+// if an object is calling a function, that object
+// becomes what 'this' is inside of that function
+// If rule 1 - 3 doesnt happen 4th rule happens by default.
+// Rule # 4 If rule one, two, or three does not happen,
+// 'this' becomes the global object // window
+// global
