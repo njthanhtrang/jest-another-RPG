@@ -1,11 +1,9 @@
 const { TestScheduler } = require("jest");
 const Player = require("../lib/Player");
-
 // imports Potion() constructor into test, est Potion as variable
 const Potion = require("../lib/Potion");
 
 jest.mock("../lib/Potion");
-console.log(new Potion());
 
 test("creates a player object", () => {
     // new creates empty obj, assigns to THIS
